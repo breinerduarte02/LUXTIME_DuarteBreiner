@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: 'Oswald', Arial, sans-serif;
+    background-color: #f2f5fa;
+    color: #242f36;
+}
+
+.formulario-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #e3e7f5;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.formulario-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #1e2a34;
+    letter-spacing: 1px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Oswald', Arial, sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #7fb1d5;
+    box-shadow: 0 0 5px rgba(127, 177, 213, 0.4);
+    outline: none;
+}
+
+.formulario-contacto button {
+    padding: 12px 25px;
+    background-color: #9eb2c2;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #7fa3bb;
+    transform: translateY(-2px);
+}

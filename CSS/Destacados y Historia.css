@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px; /* espacio entre cards */
+    margin-top: 10px;
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+.card {
+  background: #e3e7f5;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Oswald', Arial, sans-serif;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+    height: 100%;
+    height: 200px;
+    border-radius: 40px;
+    max-width: 500px;
+}
+
+.card h2{
+    font-size: 1.0rem;
+    
+}
+
+.card h4 {
+  font-size: 0.9rem;
+}
+
+.historia {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 30px auto;
+    background: #e3e7f5; /* similar al color de las cards */
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-family: 'Oswald', Arial, sans-serif;
+    color: #242f36; /* similar a #243136 pero más suave */
+    line-height: 1.6;
+    
+
+}
+
+.historia h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.historia p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-align: justify;
+    white-space: pre-line; /* para respetar saltos de línea si los hay */
+}
+
+ .carousel {
+      background: white;
+      width: 400px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+ 
+      
+    }
+    /* Ocultamos los radios */
+    
+    /* Contenedor testimonios */
+    .testimonials {
+      position: relative;
+      height: 150px;
+      overflow: hidden;
+      align-items: center;
+      
+    }
+    .testimonial {
+      
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      width: 100%;
+      top: 0;
+      left: 0;
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      padding: 10px;
+      
+    }
+    .testimonial .author {
+      margin-top: 10px;
+      font-style: normal;
+      font-weight: bold;
+      color: #333;
+    }
+    /* Mostrar testimonial cuando radio está seleccionado */
+    #t1:checked ~ .testimonials #test1,
+    #t2:checked ~ .testimonials #test2,
+    #t3:checked ~ .testimonials #test3 {
+      opacity: 1;
+      position: relative;
+      z-index: 1;
+    }
+    
